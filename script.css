@@ -1,0 +1,539 @@
+
+/*HOME block*/
+
+body {
+    background-color: rgb(49, 49, 49);
+    margin: 0; 
+    position: relative; 
+    overflow-x: hidden;
+}
+
+/*For PC HOME block*/
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: transparent; 
+        transition: background-color 0.3s ease; 
+        z-index: 1000;
+    }
+
+    .header.scrolled {
+        background-color: rgba(0, 0, 0, 0.9); 
+    }
+    
+    .content {
+        padding-top: 30px;
+    }
+
+    .firstImg {
+        position: absolute;
+        top: -15%;
+        right: 0;
+        width: 75vh;
+        height: 90vh;
+        z-index: -1;
+        border-radius: 0px 0px 0px 20px;
+    }
+
+    .box {
+        width: 150vh;
+        height: 90vh;
+        background-color: rgb(34, 34, 34);
+        position: absolute;
+        top: -15%;
+        z-index: -1;
+    }
+
+    .namePNG {
+        color: white;
+        font-size: 50px;
+        margin-top: 2.5vh;
+        margin-left: 7vh;
+        font-family: Trattatello;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    .navPanel {
+        position: absolute;
+        left: 24%;
+        top: 2vh;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 5vh;
+        font-size: 23px;
+        font-family: Trattatello;
+        font-style: oblique 5deg;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        opacity: 0.6;
+    }
+
+    h1 {
+        color: white;
+        font-size: 50px;
+        font-family: sans-serif;
+        position: absolute;
+        left: 5%;
+        top: 25vh;
+        font-weight: normal;
+    }
+
+    .textHome {
+        color: white;
+        position: absolute;
+        left: 5%;
+        top: 33vh;
+        font-size: 25px;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
+
+    .textHome2 {
+        color: white;
+        position: absolute;
+        left: 6%;
+        top: 41vh;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
+
+    .textHome3 {
+        color: white;
+        position: absolute;
+        left: 6%;
+        top: 49vh;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
+
+    .textHome4 {
+        color: white;
+        position: absolute;
+        left: 6%;
+        top: 55vh;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
+
+    .buttonGo {
+        text-align: center;
+        display: inline-block;
+        padding: 15px 40px;
+        cursor: pointer;
+        letter-spacing: 2px;
+        position:relative;
+        overflow:hidden;
+        border: none;
+        top: 60vh;
+        left: 10vh;
+        border-radius: 10px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    
+    .buttonGo:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        background : #f80000;
+        left: 45%;
+        height: 2px;
+        bottom: 0;
+        transition: all .3s;
+        opacity: 0.7;
+    }
+    
+    .buttonGo:hover:before {
+        width: 100%;
+        left:0;
+    }
+
+
+
+
+
+
+
+
+/*INFO block*/
+
+/*For PC INFO block*/
+
+
+    .fullgym {
+        position: relative;
+        top: 90vh;
+
+    }
+
+    .onegym,
+    .twogym {
+        position: absolute;
+        top: 38vh;
+        transform: translateY(-50%);
+        transition: all 0.8s ease;
+    }
+
+    .onegym {
+        left: -100%;
+        opacity: 0;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .twogym {
+        right: -100%;
+        opacity: 0;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .onegym.active {
+        left: 0%;
+        opacity: 1;
+    }
+
+    .twogym.active {
+        right: 0%;
+        opacity: 1;
+    }
+
+    .textSecList ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 108vh;
+        left: 65.5vh;
+        width: 600px;
+        gap: 4vh;
+        font-size: 20px;
+        padding-left: -30px;
+        text-indent: 30px;
+        text-align: center;
+    }
+
+    .textSecList ul li {
+        font-family: 'Trebuchet MS', Helvetica, sans-serif ;
+        font-style: normal;
+        color: white;
+        line-height: 3vh;
+    }
+
+    .textSecList hr{
+        width: 500px;
+    }
+
+    .buttonMore {
+        text-align: center;
+        display: inline-block;
+        padding: 15px 40px;
+        cursor: pointer;
+        letter-spacing: 2px;
+        position:relative;
+        overflow:hidden;
+        top: 150vh;
+        left: 88.2vh;
+        border: none;
+        border-radius: 10px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+
+    .buttonMore:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        background : #f80000;
+        left: 45%;
+        height: 2px;
+        bottom: 0;
+        transition: all .3s;
+        opacity: 0.7;
+    }
+    
+    .buttonMore:hover:before {
+        width: 100%;
+        left:0;
+    }
+
+
+
+
+
+
+
+
+
+/*FORM block*/
+
+/*For PC FORM block*/
+
+
+    .formUser {
+        width: 1200px;
+        height: 500px;
+        background-color: white;
+        position: relative;
+        top: 180vh;
+        left: 40vh;
+        border-radius: 20px;
+        background-image: url(image/cbumphone.jpg);
+        background-size: 500px;
+        background-position: 114%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .formIMG {
+        position: absolute;
+        right: 50vh;
+        top: 181.5vh;
+        z-index: 1;
+
+    }
+
+    .formUser p {
+        font-size: 40px;
+        font-family: Trattatello;
+        position: absolute;
+        color: rgb(95, 27, 27);
+        left: 5%;
+        top: -2%;
+    }
+
+    /*FORM HR*/
+    .formUser hr {
+        position: absolute;
+        width: 700px;
+        top: 18%;
+    }
+
+    .animated-hr {
+        width: 100%;
+        height: 2px;
+        background-color: rgb(95, 27, 27);
+        position: absolute;
+        top: 0;
+        left: -100%; 
+        transition: left 0.8s ease-in-out;
+    }
+
+    .animated-hr.active {
+        left: 0;
+    }
+
+
+    /*FORM input*/
+    .formControl {
+        display: flex;
+        justify-content: end;
+        align-items: start;
+        height: 6vh;
+        position: relative;
+        left: -45.5%;
+        top: 35%;
+    }
+
+    .formControl input {
+        width: 50vh;
+        height: 3vh;
+        background-color: none;
+        border: 2px solid #bebebe;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        padding-top: 10px;
+        padding-left: 15px;
+        letter-spacing: 0.3px;
+        font-family: sans-serif;
+        outline: none;
+    }
+
+    /*disable arrow spin*/
+    .formControl input[type="number"]::-webkit-inner-spin-button,
+    .formControl input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .formControl label {
+        position: absolute;
+        left: 57%;
+        top: 35%;
+        transform: translateY(-50%);
+        font-size: 17px;
+        pointer-events: none;
+        color: #404040;
+        transition: all 0.2s ease;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .formControl input:is(:focus,:valid)~label {
+        font-size: 0.75rem;
+        transform: translateY(-130%);
+    }
+
+    .formUser .checkPrivacy {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 60%;
+        left: 12.1vh;
+        cursor: pointer;
+    }
+
+    /*CHEKBOX*/
+
+    .privacyBox label {
+        position: absolute;
+        top: 60.5%;
+        left: 14.5vh; 
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /*BUTTON SUBMIT*/
+    .buttonSub {
+        position: absolute;
+        width: 50vh;
+        height: 5vh;
+        top: 72%;
+        left: 10.5%;
+        border: none;
+        font-size: 20px;
+        background-color: rgb(95, 27, 27);
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .buttonSub:hover{
+        background-color: rgb(117, 13, 13);
+    }
+
+    .buttonSub:active{
+        transform: scale(97%);
+    }
+
+
+
+
+
+
+
+
+  
+/*FOOT block*/
+
+/*For PC FOOT block*/
+
+    .footBody {
+        position: relative;
+        top: 195vh;
+        width: 100%;
+        height: 35vh;
+        background-color: rgb(34, 34, 34);
+        z-index: -1;
+    }
+
+    .footBody hr {
+        width: auto;
+        margin: 30px;
+    }
+
+    .footBody ul {
+        display: flex;
+        margin-left: -3vh;
+        justify-content: center;
+        align-items: center;
+        gap: 10vh;
+    }
+
+    .footBody a {
+        font-style: italic;
+        font-family: Trattatello;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .leftFoot {
+        position: relative;
+        top: 13%;
+        left: 5%;
+    }
+    .leftFoot img {
+        width: 200px;
+    }
+
+    .leftFoot p {
+        position: absolute;
+        color: white;
+        text-align: center;
+        letter-spacing: 0.3px;
+        left: 1.8%;
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    .centerFoot .imgA {
+        position: absolute;
+        top: 40%;
+        left: 42.5%;
+    }
+
+    .centerFoot .imgB {
+        position: absolute;
+        top: 40%;
+        left: 47.5%;
+    }
+
+    .centerFoot .imgC {
+        position: absolute;
+        top: 40%;
+        left: 52.5%;
+
+    }
+
+    .centerFoot .imgD {
+        position: absolute;
+        top: 40%;
+        left: 57.5%;
+
+    }
+
+    .centerFoot .textPol {
+        position: absolute;
+        top: 22.5vh;
+        left: 48%;
+        color: white;
+        font-family: sans-serif;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        font-style: normal;
+    }
+
+    .rightFoot .termTex {
+        text-align: right;
+        position: absolute;
+        top: 64.5%;
+        right: 5%;
+        color: white;
+        font-family: sans-serif;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        font-style: normal;
+    }
+
+    .centerFoot img {
+        width: 30px;
+    }
+
